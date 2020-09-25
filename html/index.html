@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>XXX > HUD</title>
+        <meta name="description" content="UI for XXX">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="dist/stylesheet/app.bundle.css">
+        <link rel="stylesheet" href="dist/stylesheet/app.awesome.css">
+    </head>
+    <body>
+        <div class="panel">
+            <div class="row">
+                <div class="item">
+                    <img src="../components/weapon/0.png" id="weapon-img" width="32">
+                    <span id="ammo"></span>
+                </div>
+                <div class="item" id="static">
+                    <span>
+                        <i class="fas fa-lira-sign"></i> <span id="money">99 999 999</span> <br>
+                        <i class="fas fa-credit-card"></i> <span id="bank">99 999 999</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="hunger">
+            <i class="fas fa-utensils"></i>
+            <span id="food">100</span>
+        </div>
+        <div class="thirst">
+            <i class="fas fa-tint"></i>
+            <span id="drink">100</span>
+        </div>
+       
+        <div class="staff-area">
+            <span id="inform"></span>
+            <span id="admin"></span>
+            <span id="players"></span>
+        </div>
+        <script src="dist/script/app.bundle.js"></script>
+        <script src="dist/script/app.jquery.js"></script>
+    </body>
+</html>

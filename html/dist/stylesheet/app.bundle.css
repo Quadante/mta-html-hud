@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: transparent;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+
+}
+
+div.panel {
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin-top: 10px;
+    width: 250px;
+    height: 70px;
+    
+    background: rgba(25, 28, 35,.88);
+    background: linear-gradient(-90deg, rgba(0,0,0,0.9) 0%, rgba(9,9,9,0.7) 48%, rgba(55,55,55,0.4) 59%, rgba(55,55,55,0) 77%);
+
+}
+
+div.weapon {
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin-top: 80px;
+    margin-right: 10px;
+    width: 250px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.weapon img {
+    width: 75px;
+}
+
+div.weapon span {
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+div.hunger, div.thirst {
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin-top: 81px;
+    margin-right: -5px;
+    width: 75px;
+    height: 30px;
+    background: rgba(25, 28, 35,.88);
+    background: linear-gradient(-90deg, rgba(0,0,0,0.9) 0%, rgba(9,9,9,0.7) 48%, rgba(55,55,55,0.4) 59%, rgba(55,55,55,0) 77%);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    line-height: 30px;
+    color: #ffc315;
+    font-weight: 600;
+    transform: skew(-20deg);
+}
+
+div.thirst {
+    margin-top: 113px!important;
+    color: #2162c0!important;
+}
+
+div.hunger i, div.thirst i {
+    line-height: 30px;
+    margin-right: 5px;
+    transform: skew(20deg);
+}
+
+div.hunger span, div.thirst span {
+    transform: skew(20deg);
+}
+
+div.panel div.row {
+    display: table;
+    width: 100%;
+    height: 70px;
+    table-layout: fixed;
+}
+
+div.panel div.row div.item {
+    display: table-cell;
+}
+
+div.panel div.row div.item img {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    margin-left: 45px;
+}
+
+div.panel div.row div#static {
+    border-spacing: 10px;
+    width: 50%;
+    height: 50px;
+    border-left: 1px solid rgba(125,125,125,.7);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.panel div.row div#static i {
+    font-size: 17px;
+}
+
+div.panel div.row div#static span {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 500;
+    margin-left: 3px;
+}
+
+div.panel div.row div#static span#money, div.panel div.row div#static i.fa-lira-sign {
+    color: #42d44d;
+}
+
+div.panel div.row div#static span#bank, div.panel div.row div#static i.fa-credit-card {
+    color: rgba(220, 220, 220);
+}
+
+div.staff-area {
+    display: flex;
+    opacity: .95;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+}
+
+div.staff-area span#inform {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-right: 85px;
+    text-align: right;
+}
+
+div.staff-area span#admin {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: left;
+    margin-left: 5px;
+}
+
+div.staff-area span#players {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: left;
+    margin-bottom: 15px;
+    margin-left: 5px;
+}
+
+div.voice-area {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+   
+    transform: translate(-50%, 0);
+   
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+div.voice-area div.main {
+    background: rgba(25, 28, 35,.5);
+    border-radius: 86% 14% 93% 7% / 29% 100% 0% 71%;
+    width: 70px;
+    height: 40px;
+    text-align: center;
+    transition: .2;
+}
+
+div.voice-area div.main:first-child {
+    width: 60px;
+    height: 30px;
+    background: rgba(25,28,35,.2);
+    margin-top: 10px;
+}
+
+div.voice-area div.main:last-child {
+    width: 60px;
+    height: 30px;
+    background: rgba(25,28,35,.2);
+    margin-top: 10px;
+}
+
+div.voice-area div.main i {
+    line-height: 42px;
+}
+
+div.voice-area div.main:first-child i {
+    line-height: 33px;
+    font-size: 14px;
+    opacity: .8;
+}
+
+div.voice-area div.main:last-child i {
+    line-height: 33px;
+    font-size: 14px;
+    opacity: .8;
+}
