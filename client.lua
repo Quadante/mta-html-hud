@@ -43,5 +43,3 @@ function setHudElementValue(element, value)
         set(']]..element..[[', ']]..value..[[')
     ]])
 end
-
-function mertin1levelaracengel(car) if not getElementData(car,'owner') == getElementData(source,'dbid') and getElementData(source,'level') == 1 then outputChatBox('levelin yetmiyor') end end addEventHandler("onVehicleStartEnter",root,mertin1levelaracengel)
